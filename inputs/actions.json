@@ -1,0 +1,39 @@
+[
+  {
+    "step": 1,
+    "table": "raw_day",
+    "op": "replace_partition",
+    "day": "2026-10-01",
+    "rows": [
+      {
+        "day": "2026-10-01",
+        "site": "N",
+        "received": "90.000",
+        "shipped": "30.000",
+        "revision": 2
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "table": "raw_day",
+    "op": "replace_partition",
+    "day": "2026-10-02",
+    "rows": []
+  },
+  {
+    "step": 3,
+    "table": "raw_day",
+    "op": "replace_partition",
+    "day": "2026-10-01",
+    "rows": [
+      {
+        "day": "2026-10-01",
+        "site": "N",
+        "received": "95.000",
+        "shipped": "30.000",
+        "revision": 3
+      }
+    ]
+  }
+]

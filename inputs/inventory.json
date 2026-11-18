@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "actions.json",
+      "bytes": 701,
+      "sha256": "85784b3fbfb2ab505ae7844f6af475b152402cb56e9fb3fd1c7f16ecbcd7c0a5"
+    },
+    {
+      "path": "calendar.parquet",
+      "bytes": 1982,
+      "sha256": "be755705a264791f27c1692573ec1749f4d77d24565a0d274f9953860dbee490",
+      "rows": 9
+    },
+    {
+      "path": "jobs.json",
+      "bytes": 1275,
+      "sha256": "9f48492b0f8f05a188f52b872bbc0d5e591e15622b27cbfa414546315a7a22b3"
+    },
+    {
+      "path": "opening.parquet",
+      "bytes": 958,
+      "sha256": "64948217d78d2b7c1075f8d80f947de071bbb2ac96187ca9beeb5f4c55e452bd",
+      "rows": 1
+    },
+    {
+      "path": "raw_day.parquet",
+      "bytes": 5271,
+      "sha256": "1e73790c211a9492ee530f31357468cc27c78bc3262cc59f02bcbc51b0f48a61",
+      "rows": 9
+    },
+    {
+      "path": "seed.json",
+      "bytes": 1999,
+      "sha256": "982ba931284284fae0d2cdb7578c37eaaf290ad16eeb6e4018489c8533b90d2e"
+    }
+  ]
+}

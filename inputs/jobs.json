@@ -1,0 +1,53 @@
+{
+  "daily": {
+    "depends": [
+      {
+        "table": "raw_day",
+        "offsets": [
+          0
+        ]
+      }
+    ],
+    "sql": "select day,site,sum(cast(received as decimal(18,3))) received,sum(cast(shipped as decimal(18,3))) shipped from raw_day where day=$d group by day,site"
+  },
+  "balance": {
+    "depends": [
+      {
+        "table": "daily",
+        "offsets": [
+          0
+        ]
+      },
+      {
+        "table": "balance",
+        "offsets": [
+          -1
+        ]
+      }
+    ],
+    "sql": "select $d AS day,coalesce(d.site,p.site) site,coalesce(p.closing,0)+coalesce(d.received,0)-coalesce(d.shipped,0) closing from daily d full outer join previous_balance p on d.site=p.site"
+  },
+  "turnover": {
+    "depends": [
+      {
+        "table": "daily",
+        "offsets": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          0
+        ]
+      },
+      {
+        "table": "balance",
+        "offsets": [
+          0
+        ]
+      }
+    ],
+    "sql": "select $d AS day,d.site,sum(d.shipped) shipped_7d,max(b.closing) closing from daily d join balance b on b.site=d.site where d.day between cast(cast($d as date)-6 as varchar) and $d group by d.site"
+  }
+}

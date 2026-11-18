@@ -1,0 +1,112 @@
+{
+  "raw_day": [
+    {
+      "day": "2026-09-25",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-09-26",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-09-27",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-09-28",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-09-29",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-09-30",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "0.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-10-01",
+      "site": "N",
+      "received": "100.000",
+      "shipped": "30.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-10-02",
+      "site": "N",
+      "received": "20.000",
+      "shipped": "10.000",
+      "revision": 1
+    },
+    {
+      "day": "2026-10-03",
+      "site": "N",
+      "received": "0.000",
+      "shipped": "15.000",
+      "revision": 1
+    }
+  ],
+  "opening": [
+    {
+      "day": "2026-09-30",
+      "site": "N",
+      "closing": "10.000"
+    }
+  ],
+  "calendar": [
+    {
+      "day": "2026-09-25",
+      "closed": true
+    },
+    {
+      "day": "2026-09-26",
+      "closed": true
+    },
+    {
+      "day": "2026-09-27",
+      "closed": true
+    },
+    {
+      "day": "2026-09-28",
+      "closed": true
+    },
+    {
+      "day": "2026-09-29",
+      "closed": true
+    },
+    {
+      "day": "2026-09-30",
+      "closed": true
+    },
+    {
+      "day": "2026-10-01",
+      "closed": true
+    },
+    {
+      "day": "2026-10-02",
+      "closed": true
+    },
+    {
+      "day": "2026-10-03",
+      "closed": true
+    }
+  ]
+}
