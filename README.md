@@ -8,4 +8,8 @@
 
 inputs/seed.json与同名Parquet是相同输入的两种载体；inputs/actions.json提供尚未应用的后续资料。docs/input-contract.md解释字段及原有业务约定。materials.physical只校验物理文件，不裁决身份、金额、匹配或有效版本。materials.build_inputs仅重建输入Parquet和物理清单，通常无需运行；不要把其产物误当未来业务结果。
 
-产品输出使用独立目录；原始资料保留供回查。实际入仓及查询入口和针对业务的检查方式需在实现后补充，已有输入检查不替代产品验收。
+产品输出使用独立目录；原始资料保留供回查。入仓、补算编排与固定版本查询已在 `warehouse` 包实现，
+使用方式与验收口径见 [docs/warehouse.md](docs/warehouse.md)：`python3 -I scripts/wh.py` 提供
+登记修订、影响分析、补算/重试与快照领取入口；`python3 -I scripts/run_tests.py` 运行全部测试，
+`scripts/acceptance_demo.py` 与 `scripts/race_demo.py` 分别演示完整补算时间线与双调度进程竞争。
+已有输入检查不替代产品验收。
